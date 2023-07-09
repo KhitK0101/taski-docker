@@ -62,4 +62,4 @@ build_and_push_to_docker_hub:
         with:
           context: ./backend/
           push: true
-          tags: blackstalker13/taski_backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/taski_backend:latest
