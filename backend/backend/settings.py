@@ -3,15 +3,11 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 SECRET_KEY = os.getenv('SECRET_KEY', 'django_default_secret_key)')
 
 DEBUG = (os.getenv('DEBUG')==False)
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split()
-
-
-# Application definition
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
